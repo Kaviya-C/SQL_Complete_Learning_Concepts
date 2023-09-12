@@ -30,7 +30,14 @@ END AS AGE_CATEGORY
 FROM STAFF;
 
 
-
+select full_name 
+,
+case
+when age<=22 then'hey super'
+when age<=30 then 'hai dude'
+when age>=35 then 'yes please'
+end as message
+from staff;
 
 
 
